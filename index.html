@@ -393,15 +393,6 @@
 
   </main>
 
-  <!-- modal window -->
-<div class="modal-overlay">
-  <div class="modal">
-
-
-  </div>
-</div>
-    
-
 
   <!-- footer -->
 
@@ -456,18 +447,111 @@
 
         <form class="form-subscribe" name="subscribe" autocomplete="off">
 
-        <label for="email" class="visually-hidden">E-mail</label>
-        <input 
-        type="email" 
-        id="email" 
+        <label for="email"></label>
+        <input class="input-email"
+        type="email"
+        id="email-subscribe" 
         name="email" 
         placeholder="E-mail" required>
+        
         <button type="submit" class="subscribe-btn">
           Subscribe
+
+          <!-- треба додати кпртинку літачка -->
+          <svg class="footer-email" width="24" height="24">
+            <use href="./images/icons.svg#icon-"></use>
+          </svg>
         </button>
         </form>
+      </div>
 
-       </div>
+      <!-- modal window -->
+      <div class="modal-overlay" is-open>
+        <div class="modal">
+          <button class="modal-button" type="button">
+            <!-- треба додати кпртинку літачка -->
+            <svg class="modal-icon-btn" width="8" height="8">
+              <use href="./images/icons.svg#icon-"></use>
+            </svg>
+          </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form" name="modal-callback">
+          <div class="modal-link">
+            <label class="modal-label" for="user-name">Name</label>
+              <div class="modal-line">
+              <input class="modal-inform" type="text" id="user-name" name="user-name" autofocus />
+              <!-- треба додати кпртинку -->
+              <svg class="modal-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-"></use>
+              </svg>
+              </div>
+
+
+
+
+
+              <div class="modal-link">
+                <label class="modal-label" for="user-email">Phone</label>
+                <div class="modal-line">
+                  <input class="modal-inform" type="tel" id="user-phone" name="user-phone" autofocus />
+                  <!-- треба додати кпртинку -->
+                  <svg class="modal-icon" width="18" height="24">
+                    <use href="./images/icons.svg#icon-"></use>
+                  </svg>
+                </div>
+
+
+
+
+              <div class="modal-link">
+                <label class="modal-label" for="user-email">Email</label>
+                <div class="modal-line">
+                  <input class="modal-inform" type="email" id="user-email" name="user-email" autofocus />
+                  <!-- треба додати кпртинку -->
+                  <svg class="modal-icon" width="18" height="24">
+                    <use href="./images/icons.svg#icon-"></use>
+                  </svg>
+                </div>
+
+                <label class="modal-label" for="user-name">Comment</label>
+                <div class="modal-line">
+                  <textarea class="modal-text" id="user-comment" name="user-comment" placeholder="Text input"></textarea>
+                </div>
+
+
+                <div class="checkbox">
+                  <label class="policy-title" for="user-privacy"></label>
+                  <input class="policy-checkbox visually-hidden" type="checkbox"  id="user-privacy" name="user-privacyl" autofocus value="true" />
+
+                  <label class="policy-text" for="user-privacy">I accept the terms and conditions of the 
+                    <a href="./index.html" class="policy-link">
+                      <span class="policy-link-checkbox">Privacy Policy</span></a>
+                    <svg class="modal-span-icon" width="10" height="8">
+                      <use href="./images/icons.svg#icon-"></use>
+                    </svg>
+                    
+                  
+                </label>
+
+                
+                </div>
+
+
+                </div>
+
+
+
+                
+            
+
+          </div>
+          
+
+        </form>
+
+        
+      </div>
+      
       
     </div>
   </footer>
