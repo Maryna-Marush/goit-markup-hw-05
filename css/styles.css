@@ -736,7 +736,7 @@ letter-spacing: 0.03em;
 
 }
 
-.modal-over.is-open {
+.modal-overlay.is-open {
     opacity: 1;
     visibility: visible;
 }
