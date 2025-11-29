@@ -668,15 +668,18 @@ letter-spacing: 0.03em;
 
 /* subscribe */
 
+
 .subscribe-title {
     margin-bottom: 16px;
     font-weight: 500;
     color: #ffffff;
+    margin-left: 72px;
 }
 
 .form-subscribe {
     display: flex;
     gap: 24px;
+    margin-left: 72px;
 }
 
 .input-subscribe {
