@@ -666,6 +666,8 @@ letter-spacing: 0.03em;
 
 
 
+/* subscribe */
+
 .subscribe-title {
     margin-bottom: 16px;
     font-weight: 500;
@@ -688,7 +690,6 @@ letter-spacing: 0.03em;
     padding-left: 16px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    color: #ffffff;
     
 }
 .input-subscribe::placeholder {
@@ -713,25 +714,38 @@ letter-spacing: 0.03em;
     border-radius: 4px;
 }
 
+/* subscribe */
+
 .modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
+    width: 100%;
     background-color: rgba(46, 47, 66, 0.4);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
     justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+
 }
 
+.modal-over.is-open {
+    opacity: 1;
+    visibility: visible;
+}
+
+
 .modal {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     min-height: 584px;
     width: 408px;
-    min-height: 584px;
     background: #fcfcfc;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -755,12 +769,14 @@ letter-spacing: 0.03em;
     background-color: #e7e9fc;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
+    justify-content: center;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
+.modal-button:hover,
 .modal-button:focus {
     background-color: #404bbf;
     border: none;
@@ -857,6 +873,10 @@ letter-spacing: 0.03em;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    cursor: pointer;
 }
 
 .policy-link-checkbox {
@@ -875,10 +895,10 @@ letter-spacing: 0.03em;
     
 }
 
-input[type="checkbox"]:checked+.policy-link-checkbox {
-    background-color: var(--studio-link-color);
+.policy-checkbox:checked + .policy-text .policy-link-checkbox {
+    background-color: #4d5ae5;
     border: none;
-    fill: var(--icon-fill)
+    fill: #ffffff;
 }
 
 .policy-link {

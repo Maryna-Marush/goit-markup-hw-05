@@ -446,12 +446,12 @@
         <p class="subscribe-title">Subscribe</p>
 
         <form class="form-subscribe" name="subscribe" autocomplete="off">
-
-        <label for="email"></label>
-        <input class="input-email"
+        <label for="email-subscribe" class="visually-hidden">Email</label>
+        
+        <input class="input-subscribe"
         type="email"
-        id="email-subscribe" 
-        name="email" 
+        id="email-subscribe"
+        name="email"
         placeholder="E-mail" required>
         
         <button type="submit" class="subscribe-btn">
@@ -466,7 +466,7 @@
       </div>
 
       <!-- modal window -->
-      <div class="modal-overlay" is-open>
+      <div class="modal-overlay" >
         <div class="modal">
           <button class="modal-button" type="button">
             <!-- треба додати кпртинку літачка -->
@@ -476,83 +476,105 @@
           </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form" name="modal-callback">
+          
+          <!-- name -->
+          
           <div class="modal-link">
             <label class="modal-label" for="user-name">Name</label>
               <div class="modal-line">
-              <input class="modal-inform" type="text" id="user-name" name="user-name" autofocus />
+              <input class="modal-inform"
+              type="text"
+              id="user-name"
+              name="user-name" />
               <!-- треба додати кпртинку -->
               <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-"></use>
               </svg>
               </div>
+          </div>
 
-
-
-
+<!-- phone -->
 
               <div class="modal-link">
-                <label class="modal-label" for="user-email">Phone</label>
+                <label class="modal-label" for="user-phone">Phone</label>
                 <div class="modal-line">
-                  <input class="modal-inform" type="tel" id="user-phone" name="user-phone" autofocus />
+                  <input class="modal-inform"
+                  type="tel"
+                  id="user-phone"
+                  name="user-phone" />
                   <!-- треба додати кпртинку -->
                   <svg class="modal-icon" width="18" height="24">
                     <use href="./images/icons.svg#icon-"></use>
                   </svg>
                 </div>
+              </div>
 
-
-
+<!-- email -->
 
               <div class="modal-link">
                 <label class="modal-label" for="user-email">Email</label>
                 <div class="modal-line">
-                  <input class="modal-inform" type="email" id="user-email" name="user-email" autofocus />
+                  <input class="modal-inform"
+                  type="email"
+                  id="user-email"
+                  name="user-email" />
                   <!-- треба додати кпртинку -->
                   <svg class="modal-icon" width="18" height="24">
                     <use href="./images/icons.svg#icon-"></use>
                   </svg>
                 </div>
+              </div>
 
-                <label class="modal-label" for="user-name">Comment</label>
-                <div class="modal-line">
-                  <textarea class="modal-text" id="user-comment" name="user-comment" placeholder="Text input"></textarea>
-                </div>
+<!-- comment -->
 
+<div class="modal-link">
+  <label class="modal-label" for="user-name">Comment</label>
+  <div class="modal-line">
+    <textarea class="modal-text"
+    id="user-comment"
+    name="user-comment"
+    placeholder="Text input"></textarea>
+  </div>
+</div>
 
-                <div class="checkbox">
-                  <label class="policy-title" for="user-privacy"></label>
-                  <input class="policy-checkbox visually-hidden" type="checkbox"  id="user-privacy" name="user-privacyl" autofocus value="true" />
-
-                  <label class="policy-text" for="user-privacy">I accept the terms and conditions of the 
-                    <a href="./index.html" class="policy-link">
-                      <span class="policy-link-checkbox">Privacy Policy</span></a>
+<!-- policy -->
+ <div class="checkbox">
+  <input class="policy-checkbox visually-hidden"
+  type="checkbox"
+  id="user-privacy"
+  name="user-privacy" />
+  
+  <label class="policy-text" for="user-privacy"></label>
+  <span class="policy-link-checkbox"></span>
+  I accept the terms and conditions of the
+  <a href="./index.html" class="policy-link">Privacy Policy</a>
+  </div>
+        </form>
                     <svg class="modal-span-icon" width="10" height="8">
                       <use href="./images/icons.svg#icon-"></use>
                     </svg>
                     
                   
-                </label>
+                
 
                 
-                </div>
+              
 
 
-                </div>
+               
 
 
 
                 
             
 
-          </div>
-          
 
-        </form>
 
         
       </div>
       
       
+    </div>
     </div>
   </footer>
 </body>
