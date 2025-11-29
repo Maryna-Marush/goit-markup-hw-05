@@ -695,6 +695,13 @@ letter-spacing: 0.03em;
     border-radius: 4px;
     
 }
+
+.label-subscribe {
+display: flex;
+gap: 12px;
+align-items: center;
+}
+
 .input-subscribe::placeholder {
     color: #ffffff;
 }
@@ -720,7 +727,7 @@ letter-spacing: 0.03em;
 /* modal */
 
 .modal-overlay {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     height: 100%;
@@ -783,6 +790,7 @@ letter-spacing: 0.03em;
 .modal-button:focus {
     background-color: #404bbf;
     border: none;
+    fill: #ffffff;
 }
 
 .modal-icon-btn {
@@ -896,6 +904,7 @@ letter-spacing: 0.03em;
     fill: transparent;
     border: 1px solid blue;
     
+    
 }
 
 .policy-checkbox:checked + .policy-text .policy-link-checkbox {
@@ -906,4 +915,13 @@ letter-spacing: 0.03em;
 
 .policy-link {
     color: var(--brand-color);
+}
+
+.send-button {
+    display: block;
+    margin: auto;
+    min-width: 169px;
+    height: 56px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
 }

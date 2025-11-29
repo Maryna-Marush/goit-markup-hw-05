@@ -446,7 +446,7 @@
         <p class="subscribe-title">Subscribe</p>
 
         <form class="form-subscribe" name="subscribe" autocomplete="off">
-        <label for="email-subscribe" class="visually-hidden">Email</label>
+        <label for="email-subscribe" class="label-subscribe">
         <input class="input-subscribe"
         type="email"
         id="email-subscribe"
@@ -456,11 +456,12 @@
         <button type="submit" class="subscribe-btn">
           Subscribe
 
-          <!-- треба додати кпртинку літачка -->
+          
           <svg class="footer-email" width="24" height="24">
-            <use href="./images/icons.svg#icon-"></use>
+            <use href="./images/icons.svg#icon-plane"></use>
           </svg>
         </button>
+        </label>
         </form>
       </div>
       </div>
@@ -470,9 +471,9 @@
       <div class="modal-overlay is-open">
         <div class="modal">
           <button class="modal-button" type="button">
-            <!-- треба додати кпртинку літачка -->
+            
             <svg class="modal-icon-btn" width="8" height="8">
-              <use href="./images/icons.svg#icon-"></use>
+              <use href="./images/icons.svg#icon-cclose"></use>
             </svg>
           </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
@@ -489,7 +490,7 @@
               name="user-name" />
               <!-- треба додати кпртинку -->
               <svg class="modal-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-"></use>
+                <use href="./images/icons.svg#icon-name"></use>
               </svg>
               </div>
           </div>
@@ -505,7 +506,7 @@
                   name="user-phone" />
                   <!-- треба додати кпртинку -->
                   <svg class="modal-icon" width="18" height="24">
-                    <use href="./images/icons.svg#icon-"></use>
+                    <use href="./images/icons.svg#icon-phone"></use>
                   </svg>
                 </div>
               </div>
@@ -521,7 +522,7 @@
                   name="user-email" />
                   <!-- треба додати кпртинку -->
                   <svg class="modal-icon" width="18" height="24">
-                    <use href="./images/icons.svg#icon-"></use>
+                    <use href="./images/icons.svg#icon-email"></use>
                   </svg>
                 </div>
               </div>
@@ -529,13 +530,13 @@
 <!-- comment -->
 
 <div class="modal-link">
-  <label class="modal-label" for="user-name">Comment</label>
-  <div class="modal-line">
+  <label class="modal-label" for="user-comment">Comment</label>
+  
     <textarea class="modal-text"
     id="user-comment"
     name="user-comment"
     placeholder="Text input"></textarea>
-  </div>
+ 
 </div>
 
 <!-- policy -->
@@ -543,24 +544,25 @@
   <input class="policy-checkbox visually-hidden"
   type="checkbox"
   id="user-privacy"
-  name="user-privacy" />
+  name="user-privacy"
+
+   />
   
-  <label class="policy-text" for="user-privacy"></label>
+  <label class="policy-text" for="user-privacy">
  
   I accept the terms and conditions of the<span class="policy-link-checkbox">
-    <a href="./index.html" class="policy-link">Privacy Policy</a></span>
+    <a href="./index.html" class="policy-link">Privacy Policy</a></span></label>
   </div>
-        </form>
-                    <svg class="modal-span-icon" width="10" height="8">
-                      <use href="./images/icons.svg#icon-"></use>
-                    </svg>
-                    
-   
-        
-      </div>
-      
-      
-    </div>
+  <svg class="modal-span-icon" width="10" height="8">
+    <use href="./images/icons.svg#icon-checkbox"></use>
+  </svg>
+  
+  <button class="send-button" type="button">Send
+
+  </button>
+</form>
+</div>
+ </div>
     
 </body>
 </html>
