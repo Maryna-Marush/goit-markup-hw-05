@@ -921,8 +921,7 @@ align-items: center;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    /* видалила fill: transparent; */
-    
+    fill: transparent;
 
     display: inline-flex;
     
