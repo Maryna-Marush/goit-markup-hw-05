@@ -937,6 +937,7 @@ align-items: center;
 }
 .policy-checkbox:checked+.policy-text .policy-link-checkbox .modal-span-icon {
     fill: var(--icon-fill);
+    opacity: 1;
 }
 
 .send-button {
@@ -959,6 +960,3 @@ align-items: center;
     
 }
 
-.modal-span-icon {
-    opacity: 0;
-}
