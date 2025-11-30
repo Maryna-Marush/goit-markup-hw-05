@@ -921,8 +921,9 @@ align-items: center;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    fill: transparent;
-    border: 1px solid rgba(46, 47, 66, 0.4);
+    /* видалила fill: transparent; */
+    
+
     display: inline-flex;
     
     
