@@ -931,12 +931,12 @@ align-items: center;
 }
 
 .policy-checkbox:checked+.policy-text .policy-link-checkbox {
-    background-color: var(--brand-color);
+    background-color: var(--studio-link-color);
     border: none;
 
 }
 .policy-checkbox:checked+.policy-text .policy-link-checkbox .modal-span-icon {
-    fill: var(--light-color);
+    fill: var(--icon-fill);
 }
 
 .send-button {
