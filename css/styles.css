@@ -733,7 +733,7 @@ align-items: center;
 /* modal */
 
 .modal-overlay {
-    /* видалила position: absolute; */
+   
     top: 0;
     left: 0;
     height: 100%;
@@ -768,7 +768,6 @@ align-items: center;
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-/* видалила position: relative; */
     padding: 72px 24px 24px 24px;
     position: absolute;
 
@@ -820,7 +819,7 @@ align-items: center;
 }
 
 .modal-link {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
     
 }
 
@@ -873,7 +872,7 @@ align-items: center;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    color: #2E2F42;
+    color: rgba(46, 47, 66, 0.4);
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     background-color: transparent;
@@ -926,10 +925,11 @@ align-items: center;
     
 }
 
-.policy-checkbox:checked + .policy-text .policy-link-checkbox {
-    background-color: #4d5ae5;
+.policy-checkbox:checked+.policy-text .policy-link-checkbox {
+    background-color: var(--brand-color);
+    fill: var(--light-color);
     border: none;
-    fill: #ffffff;
+
 }
 
 .policy-link {
