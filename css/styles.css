@@ -822,6 +822,9 @@ align-items: center;
     margin-bottom: 8px;
     
 }
+.modal-link-comment {
+    margin-bottom: 16px;
+}
 
 .modal-label {
     font-size: 12px;
@@ -925,6 +928,10 @@ align-items: center;
     
 }
 
+.policy-link-checkbox {
+    color: var(--brand-color);
+}
+
 .policy-checkbox:checked+.policy-text .policy-link-checkbox {
     background-color: var(--brand-color);
     fill: var(--light-color);
@@ -932,9 +939,7 @@ align-items: center;
 
 }
 
-.policy-link {
-    color: var(--brand-color);
-}
+
 
 .send-button {
     display: block;
