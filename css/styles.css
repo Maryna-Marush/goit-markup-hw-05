@@ -932,11 +932,13 @@ align-items: center;
     color: var(--brand-color);
 }
 
-.policy-checkbox:checked~.policy-text .policy-link-checkbox {
+.policy-checkbox:checked+.policy-text .policy-link-checkbox {
     background-color: var(--brand-color);
-    fill: var(--light-color);
     border: none;
 
+}
+.policy-checkbox:checked+.policy-text .policy-link-checkbox .modal-span-icon {
+    background-color: var(--brand-color);
 }
 
 .send-button {
