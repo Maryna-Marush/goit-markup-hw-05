@@ -938,7 +938,7 @@ align-items: center;
 
 }
 .policy-checkbox:checked+.policy-text .policy-link-checkbox .modal-span-icon {
-    background-color: var(--brand-color);
+    fill: var(--light-color);
 }
 
 .send-button {
