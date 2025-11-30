@@ -928,18 +928,16 @@ align-items: center;
     
 }
 
-.policy-link-checkbox {
+.policy-link {
     color: var(--brand-color);
 }
 
-.policy-checkbox:checked+.policy-text .policy-link-checkbox {
+.policy-checkbox:checked~.policy-text .policy-link-checkbox {
     background-color: var(--brand-color);
     fill: var(--light-color);
     border: none;
 
 }
-
-
 
 .send-button {
     display: block;
