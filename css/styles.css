@@ -933,10 +933,11 @@ align-items: center;
 .policy-checkbox:checked+.policy-text .policy-link-checkbox {
     background-color: var(--studio-link-color);
     border: none;
-    fill: var(--icon-fill);
 
 }
-
+.policy-checkbox:checked+.policy-text .policy-link-checkbox .modal-span-icon {
+    fill: var(--icon-fill);
+}
 
 .send-button {
     display: block;
